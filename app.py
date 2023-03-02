@@ -28,5 +28,5 @@ with mp_facedetector.FaceDetection(min_detection_confidence=0.7) as face_detecti
             totalTime = end - start
             fps = 1/ totalTime
             print("FPS: ", fps)
-            cv2.putText(image, f'FPS: {int(fps)}')
+            cv2.putText(image, f'FPS: {int(fps)}', (20,70), cv2.FONT)
         
